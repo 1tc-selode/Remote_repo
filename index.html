@@ -32,36 +32,31 @@
 #application logic
 input = document.getElementById("input")
 output = document.getElementById("output")
-
 def clear(*args):
     input.value="
-    output.innertext='Output'
+    output.innerText'Output'
 
-def lenggt(*args):
-    inputLenght = len(input.value)
-    result = f'The text is {inputLenght} characters'
+def lenght(*args):
+    inputLength = len(input.value)
+    result=f'The text is {inputLenght}characters.'
     console.log(result)
-    output.innerText = result
+    output.innerText= result
 
-def uppercase(*args):
-    result = input.value.lower()
+def uppercase(*afrs):
+    result= input.value.upper()
     console.log(result)
-    output.innerText = result
+
+def lowercase(*args):
+    result=input.value.lower()
+    output.innerText=result
     
-def lowrcase(*args):
-    result = input.value.lower()
-    console.log(result)
-    output.innerText = result
-
 def swapcase(*args):
-    result = input.value.swapcase()
-    console.log(result)
-    output.innerText = result
+    result=input.value.swapcase()
+    output.innerText=result 
 
 def reverse(*args):
-    result = input.value[::-1]
-    console.log(result)
-    output.innerText = result
+    result=input.value[::-1]
+    output.innerText=result 
 
 def withoutSpacesDef(*args):
     result = args[0].replace('',")
@@ -77,7 +72,6 @@ def withoutVowel(*args):
     result = ".join([char for char in input.value if char not in vowles])
     console.log(result)
     output.innerText = result
-
 
 </py-script>
 </body>
