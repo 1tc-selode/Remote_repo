@@ -30,6 +30,54 @@
 
 <py-script>
 #application logic
+input = document.getElementById("input")
+output = document.getElementById("output")
+
+def clear(*args):
+    input.value="
+    output.innertext='Output'
+
+def lenggt(*args):
+    inputLenght = len(input.value)
+    result = f'The text is {inputLenght} characters'
+    console.log(result)
+    output.innerText = result
+
+def uppercase(*args):
+    result = input.value.lower()
+    console.log(result)
+    output.innerText = result
+    
+def lowrcase(*args):
+    result = input.value.lower()
+    console.log(result)
+    output.innerText = result
+
+def swapcase(*args):
+    result = input.value.swapcase()
+    console.log(result)
+    output.innerText = result
+
+def reverse(*args):
+    result = input.value[::-1]
+    console.log(result)
+    output.innerText = result
+
+def withoutSpacesDef(*args):
+    result = args[0].replace('',")
+    return result
+
+def withoutSpaces(*args):
+    result = withoutSpacesDef(input.value)
+    console.log(result)
+    output.innerText = result
+
+def withoutVowel(*args):
+    vowels = 'aAeEiIoOuU'
+    result = ".join([char for char in input.value if char not in vowles])
+    console.log(result)
+    output.innerText = result
+
 
 </py-script>
 </body>
